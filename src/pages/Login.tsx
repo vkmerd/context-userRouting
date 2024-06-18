@@ -60,7 +60,7 @@ export default function Login() {
                     {Object.entries(formState).map(([key, value]) => (
                         <li key={key}>{key}: {value as string}</li>
                     ))}
-                    <Button variant={buttonState ? "contained" : "disabled"} onClick={routeUsers}>Kaydet</Button>
+                    <Button variant="contained" disabled={!buttonState} onClick={routeUsers}>Kaydet</Button>
                 </ul>
             </Box>
         </>
